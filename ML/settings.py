@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
 
 # Application definition
 
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'core'
 ]
 
 MIDDLEWARE = [
@@ -120,3 +123,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CSRF_COOKIE_SECURE = False
+
+BASE_URL = 'http://localhost:8888/gettoken/'
