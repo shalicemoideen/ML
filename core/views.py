@@ -202,7 +202,7 @@ def gettoken(request):
           "text": "Welcome to <b>Botland</b>. Please visit <a href=\"https://blogs.msdn.microsoft.com/tsmatsuz\">my blog</a>."
         }
   # bot_response = "Welcome to <b>Botland</b>. Please visit <a href=\"https://blogs.msdn.microsoft.com/tsmatsuz\">my blog</a>."
-  bot_response = {
+  fullfillment = {
               "type": "message",
               "attachmentLayout": "list",
               "text": "",
@@ -233,7 +233,7 @@ def gettoken(request):
               ]
             }
 
-  fullfillment = {"speech":bot_response,"displayText":bot_response}
+  # fullfillment = {"speech":bot_response,"displayText":bot_response}
   fullfillment = json.dumps(fullfillment)
   return HttpResponse(fullfillment, content_type="application/json")
   
