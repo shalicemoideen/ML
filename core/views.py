@@ -234,7 +234,15 @@ def gettoken(request):
             }
 
   bot_res = [{"type":2, 
-              "platform":"skype","title":"","replies":["book a meeting","nothing","test"]}]
+              "platform":"skype","title":"","replies":["book a meeting","nothing","test"]},
+              {"type":0,"speech":"Ok can you please tell me the location"}]
+
+
+
+
+
+
+# "[{\"type\":2,\"platform\":\"skype\",\"title\":\"\",\"replies\":[\"book a meeting\",\"nothing\",\"test\"]},{\"type\":0,\"speech\":\"Ok can you please tell me the location\"}]"
 
   fullfillment = {"speech":json.dumps(bot_res),"displayText":json.dumps(bot_res)}
   fullfillment = json.dumps(fullfillment)
