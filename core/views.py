@@ -278,7 +278,7 @@ def gettoken(request):
                   
 
   simple = {
-    "speech": "Text response<input type='button' value='Yes'/>",
+    "speech": "Welcome to <b>Botland</b>. Please visit <a href=\"https://blogs.msdn.microsoft.com/tsmatsuz\">my blog</a>.Text response<input type='button' value='Yes'/>",
     "type": 0
   }
 
