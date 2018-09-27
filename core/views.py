@@ -155,6 +155,7 @@ def selenium_login():
 
 
 def gettoken(request):
+  
   # auth_code = request.GET['code']
   # print(auth_code,"code")
   # redirect_uri = settings.BASE_URL
@@ -244,7 +245,7 @@ def gettoken(request):
 
 # "[{\"type\":2,\"platform\":\"skype\",\"title\":\"\",\"replies\":[\"book a meeting\",\"nothing\",\"test\"]},{\"type\":0,\"speech\":\"Ok can you please tell me the location\"}]"
 
-  fullfillment = {"speech":json.dumps(bot_res),"displayText":json.dumps(bot_res)}
+  fullfillment = {"speech":json.dumps(resp),"displayText":json.dumps(resp)}
   fullfillment = json.dumps(fullfillment)
   return HttpResponse(fullfillment, content_type="application/json")
   
