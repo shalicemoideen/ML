@@ -282,6 +282,13 @@ def gettoken(request):
     "type": 0
   }
 
+  lst = {
+        "messages": {
+          "type": 1,
+          "title": "card title",
+          "subtitle": "card text",
+          "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
+        }}
 
 
   bot_res = [{"type":2, 
@@ -298,7 +305,7 @@ def gettoken(request):
   fullfillment = {"speech":bot_response,"displayText":bot_response}
   speech = {"speech":json.dumps(bot_response)}
   fullfillment = json.dumps(fullfillment)
-  return HttpResponse(json.dumps(bot_res), content_type="application/json")
+  return HttpResponse(json.dumps(lst), content_type="application/json")
   
   # result = json.dumps(resp)
   # return JsonResponse(resp)
