@@ -245,7 +245,7 @@ def gettoken(request):
 
 # "[{\"type\":2,\"platform\":\"skype\",\"title\":\"\",\"replies\":[\"book a meeting\",\"nothing\",\"test\"]},{\"type\":0,\"speech\":\"Ok can you please tell me the location\"}]"
 
-  fullfillment = {"speech":json.dumps(resp),"displayText":json.dumps(resp)}
+  fullfillment = {"speech":resp,"displayText":resp}
   fullfillment = json.dumps(fullfillment)
   return HttpResponse(fullfillment, content_type="application/json")
   
