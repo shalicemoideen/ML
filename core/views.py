@@ -155,7 +155,7 @@ def selenium_login():
 
 
 def gettoken(request):
-  
+
   # auth_code = request.GET['code']
   # print(auth_code,"code")
   # redirect_uri = settings.BASE_URL
@@ -200,7 +200,7 @@ def gettoken(request):
 
   resp = {
           "type": "message",
-          "text": "Welcome to <b>Botland</b>. <button>Test </button> Please visit <a href=\"https://blogs.msdn.microsoft.com/tsmatsuz\">my blog</a>."
+          "text": "Welcome to <b>Botland</b>. Please visit <a href=\"https://blogs.msdn.microsoft.com/tsmatsuz\">my blog</a>."
         }
   # bot_response = "Welcome to <b>Botland</b>. Please visit <a href=\"https://blogs.msdn.microsoft.com/tsmatsuz\">my blog</a>."
   bot_response = {
