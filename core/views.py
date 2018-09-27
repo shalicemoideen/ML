@@ -341,7 +341,7 @@ def gettoken(request):
   fullfillment = {"speech":bot_response,"displayText":bot_response}
   speech = {"speech":json.dumps(bot_response)}
   fullfillment = json.dumps(fullfillment)
-  return HttpResponse(json.dumps(data), content_type="application/json")
+  return HttpResponse(json.dumps(simple), content_type="application/json")
   
   # result = json.dumps(resp)
   # return JsonResponse(resp)
