@@ -282,13 +282,13 @@ def gettoken(request):
     "type": 0
   }
 
-  lst = {
+  lst = [{
         "messages": {
           "type": 1,
           "title": "card title",
           "subtitle": "card text",
           "imageUrl": "https://assistant.google.com/static/images/molecule/Molecule-Formation-stop.png"
-        }}
+        }}]
 
 
   bot_res = [{"type":2, 
